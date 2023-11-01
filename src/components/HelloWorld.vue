@@ -1,7 +1,6 @@
 <template>
 	<div class="hello">
-		ТУТ БУДЕТ NEOBOT
-		<img src="../assets/images/bot_and_neo.png" alt="" />
+		<img src="../assets/images/bot_and_neo.png" alt="" style="width: 20%" />
 	</div>
 </template>
 
