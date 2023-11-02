@@ -3,12 +3,8 @@
 		<div class="logoWrapper">
 			<img src="../assets/images/neovox_logo.svg" alt="" />
 		</div>
-		<my-main-button style="margin-top: 20px; width: 70%"
-			>Магазин</my-main-button
-		>
-		<my-main-button style="margin-top: 20px; width: 70%"
-			>Задания</my-main-button
-		>
+		<my-main-button class="startPageBtn">Магазин</my-main-button>
+		<my-main-button class="startPageBtn">Задания</my-main-button>
 	</div>
 </template>
 
@@ -29,10 +25,22 @@
 		flex-direction: column;
 		margin: 0 auto;
 		width: 80%;
-		margin-top: 100px;
+		margin-top: 150px;
 		align-items: center;
-	}
-	.logoWrapper {
-		margin-bottom: 30px;
+		.logoWrapper {
+			display: flex;
+			align-self: center;
+			margin-bottom: 80px;
+			width: 80%;
+			img {
+				width: 100%;
+			}
+		}
+		.startPageBtn {
+			margin-top: 30px;
+			width: 70%;
+			font-size: 17px;
+			height: 50px;
+		}
 	}
 </style>
