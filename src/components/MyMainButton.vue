@@ -12,5 +12,6 @@
 
 <style lang="scss" scoped>
 	.mainBtn {
+		background: #f0d9d9ad;
 	}
 </style>
