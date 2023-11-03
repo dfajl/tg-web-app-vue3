@@ -1,5 +1,6 @@
 <template>
 	<router-view></router-view>
+	приветики
 </template>
 
 <script>
@@ -9,9 +10,4 @@
 	};
 </script>
 
-<style>
-	body {
-		background: var(--tg-theme-bg-color);
-		color: var(--tg-theme-text-color);
-	}
-</style>
+<style></style>
