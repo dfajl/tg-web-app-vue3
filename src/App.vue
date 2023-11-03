@@ -1,18 +1,18 @@
 <template>
 	<router-view></router-view>
-	приветики
 </template>
 
 <script>
+	import './assets/styles/style.css';
 	export default {
 		name: 'App',
 		components: {},
 	};
 </script>
 
-<style lang="css">
-	body {
+<style>
+	/* body {
 		background: var(--tg-theme-bg-color);
 		color: var(--tg-theme-text-color);
-	}
+	} */
 </style>
