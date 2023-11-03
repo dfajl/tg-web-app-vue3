@@ -9,4 +9,9 @@
 	};
 </script>
 
-<style></style>
+<style>
+	body {
+		background: var(--tg-theme-bg-color);
+		color: var(--tg-theme-text-color);
+	}
+</style>

@@ -1,7 +1,7 @@
 <template>
 	<div class="startPageWrapper">
 		<div class="logoWrapper">
-			<img src="../assets/images/neovox_logo.svg" alt="" />
+			<img src="../assets/images/neovox_logo.svg" alt="neovox_logo" />
 		</div>
 		<my-main-button class="startPageBtn">Магазин</my-main-button>
 		<my-main-button class="startPageBtn">Задания</my-main-button>
@@ -9,13 +9,17 @@
 </template>
 
 <script>
-	import { mapActions, mapState, mapMutations } from 'vuex';
+	import useTelegram from '@/hooks/useTelegram';
+	import { ref, onMounted, onBeforeUnmount } from 'vue';
+	import { useStore } from 'vuex';
+	import { useRoute } from 'vue-router';
+	//import { mapActions, mapState, mapMutations } from 'vuex';
 	export default {
-		components: {},
-		name: 'my-auth',
-		data: () => ({}),
-		methods: {},
-		computed: {},
+		setup() {
+			onMounted(() => {
+				useTelegram();
+			});
+		},
 	};
 </script>
 
