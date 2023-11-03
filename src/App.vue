@@ -11,7 +11,7 @@
 
 <style>
 	body {
-		background-color: var(--tg-theme-bg-color);
+		background: var(--tg-theme-bg-color);
 		color: var(--tg-theme-text-color);
 	}
 </style>
