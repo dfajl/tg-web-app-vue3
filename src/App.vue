@@ -12,7 +12,7 @@
 
 <style lang="scss">
 	body {
-		background: var(--tg-theme-bg-color);
+		background: var(--tg-theme-bg-color, red);
 		color: var(--tg-theme-text-color);
 	}
 </style>
