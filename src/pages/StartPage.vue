@@ -25,8 +25,6 @@
 
 <style lang="scss" scoped>
 	.startPageWrapper {
-		background: var(--tg-theme-bg-color);
-		color: var(--tg-theme-text-color);
 		display: flex;
 		flex-direction: column;
 		margin: 0 auto;

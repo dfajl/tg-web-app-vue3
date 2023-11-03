@@ -10,4 +10,9 @@
 	};
 </script>
 
-<style></style>
+<style lang="css">
+	body {
+		background: var(--tg-theme-bg-color);
+		color: var(--tg-theme-text-color);
+	}
+</style>
