@@ -1,5 +1,6 @@
-const telegram = window.Telegram.WebApp;
+const tg = window.Telegram.WebApp;
 
 export default function useTelegram() {
-	console.log(telegram);
+	console.log(tg);
+	console.log(tg.themeParams);
 }
