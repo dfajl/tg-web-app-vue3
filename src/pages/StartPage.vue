@@ -8,7 +8,7 @@
 			>Магазин</my-main-button
 		>
 		<span>{{ userData }}</span>
-		<my-main-button class="startPageBtn">Задания</my-main-button>
+		<!-- <my-main-button class="startPageBtn">Задания</my-main-button> -->
 	</div>
 </template>
 
