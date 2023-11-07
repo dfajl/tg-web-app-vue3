@@ -4,7 +4,10 @@
 			<img src="../assets/images/neovox_logo.svg" alt="neovox_logo" />
 		</div>
 		<span>{{ tg }}</span>
-		<my-main-button class="startPageBtn">Магазин</my-main-button>
+		<my-main-button class="startPageBtn" @click="showDataUser"
+			>Магазин</my-main-button
+		>
+		<span>{{ userData }}</span>
 		<my-main-button class="startPageBtn">Задания</my-main-button>
 	</div>
 </template>
@@ -17,10 +20,15 @@
 	//import { mapActions, mapState, mapMutations } from 'vuex';
 	export default {
 		setup() {
+			let userData = ref('');
 			//onMounted(() => {
 			const tg = useTelegram();
+			function showDataUser() {
+				userData.value = tg.initDataUnsafe;
+			}
+
 			//});
-			return { tg };
+			return { tg, showDataUser, userData };
 		},
 	};
 </script>
