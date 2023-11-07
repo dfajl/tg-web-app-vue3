@@ -22,7 +22,7 @@
 		setup() {
 			let userData = ref(null);
 			//onMounted(() => {
-			//const { tg, user } = useTelegram();
+			const { tg, user } = useTelegram();
 			function showDataUser() {
 				userData.value = 'gfgfg';
 			}
