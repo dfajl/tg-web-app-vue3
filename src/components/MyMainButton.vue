@@ -13,6 +13,6 @@
 <style lang="scss" scoped>
 	.mainBtn {
 		background: #d0cdcd58;
-		color: rgba(2, 11, 73, 0.68);
+		color: rgba(190, 4, 4, 0.68);
 	}
 </style>
