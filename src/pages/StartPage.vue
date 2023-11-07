@@ -24,10 +24,10 @@
 </script>
 
 <style lang="scss" scoped>
-	body {
+	/* body {
 		background: var(--tg-theme-bg-color);
 		color: var(--tg-theme-text-color);
-	}
+	} */
 	.startPageWrapper {
 		display: flex;
 		flex-direction: column;
