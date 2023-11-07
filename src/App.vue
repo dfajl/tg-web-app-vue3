@@ -12,7 +12,14 @@
 		setup() {
 			const { tg } = useTelegram();
 
-			watchEffect(tg.ready());
+			watchEffect(() => {
+				tg.ready();
+				window.Telegram.WebApp.MainButton.show();
+				window.Telegram.WebApp.onEvent(
+					'mainButtonClicked',
+					handleMainButtonClick,
+				);
+			});
 		},
 	};
 </script>
