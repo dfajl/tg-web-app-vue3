@@ -36,6 +36,11 @@
 				);
 			});
 
+			watchEffect(() => {
+				tg.ready();
+				window.Telegram.WebApp.MainButton.show();
+			});
+
 			const handleMainButtonClick = () => {
 				// Обработка события нажатия на кнопку "mainButton"
 				console.log('Нажата кнопка mainButton');
