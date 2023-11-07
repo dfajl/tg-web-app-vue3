@@ -5,11 +5,14 @@
 <script>
 	import useTelegram from '@/hooks/useTelegram';
 	import styles from './assets/styles/style.module.css';
+	import { ref, onMounted, onBeforeUnmount } from 'vue';
 	export default {
 		name: 'App',
 		components: {},
 		setup() {
-			useTelegram();
+			onMounted(() => {
+				useTelegram();
+			});
 		},
 	};
 </script>

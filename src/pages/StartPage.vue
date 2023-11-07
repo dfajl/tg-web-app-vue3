@@ -7,7 +7,7 @@
 		<my-main-button class="startPageBtn" @click="showDataUser"
 			>Магазин</my-main-button
 		>
-		<span>{{ user }}</span>
+		<span>{{ userData }}</span>
 		<my-main-button class="startPageBtn">Задания</my-main-button>
 	</div>
 </template>
