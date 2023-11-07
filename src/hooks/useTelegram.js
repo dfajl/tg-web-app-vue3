@@ -6,5 +6,10 @@ export default function useTelegram() {
 	console.log(tg);
 	console.log(tg.themeParams.bg_color);
 	tg.setBackgroundColor(tg.bg_color);
-	return tg;
+
+	return {
+		user: tg.initDataUnsafe?.user,
+		queryId: tg.initDataUnsafe?.query_id,
+		tg,
+	};
 }

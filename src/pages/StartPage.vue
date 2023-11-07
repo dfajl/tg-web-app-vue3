@@ -3,11 +3,11 @@
 		<div class="logoWrapper">
 			<img src="../assets/images/neovox_logo.svg" alt="neovox_logo" />
 		</div>
-		<span>{{ tg }}</span>
+		<span>{{ user }}</span>
 		<my-main-button class="startPageBtn" @click="showDataUser"
 			>Магазин</my-main-button
 		>
-		<span>{{ userData }}</span>
+		<span>{{ user }}</span>
 		<my-main-button class="startPageBtn">Задания</my-main-button>
 	</div>
 </template>
@@ -22,13 +22,13 @@
 		setup() {
 			let userData = ref('');
 			//onMounted(() => {
-			const tg = useTelegram();
+			const { tg, user } = useTelegram();
 			function showDataUser() {
 				userData.value = tg.initDataUnsafe;
 			}
 
 			//});
-			return { tg, showDataUser, userData };
+			return { tg, showDataUser, userData, user };
 		},
 	};
 </script>
