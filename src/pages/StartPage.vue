@@ -3,7 +3,7 @@
 		<div class="logoWrapper">
 			<img src="../assets/images/neovox_logo.svg" alt="neovox_logo" />
 		</div>
-		<span>{{ user }}</span>
+		<span>{{ tg }}</span>
 		<my-main-button class="startPageBtn" @click="showDataUser"
 			>Магазин</my-main-button
 		>
@@ -20,23 +20,23 @@
 	//import { mapActions, mapState, mapMutations } from 'vuex';
 	export default {
 		setup() {
-			let userData = ref('');
+			let userData = ref(null);
 			//onMounted(() => {
 			const { tg, user } = useTelegram();
 			function showDataUser() {
-				userData.value = tg.initDataUnsafe;
+				userData.value = 'gfgfg';
 			}
 
 			//});
-			onMounted(() => {
+			/* onMounted(() => {
 				window.Telegram.WebApp.MainButton.show();
 				window.Telegram.WebApp.onEvent(
 					'mainButtonClicked',
 					handleMainButtonClick,
 				);
-			});
+			}); */
 
-			watchEffect(() => {
+			/* watchEffect(() => {
 				tg.ready();
 				window.Telegram.WebApp.MainButton.show();
 			});
@@ -45,7 +45,7 @@
 				// Обработка события нажатия на кнопку "mainButton"
 				console.log('Нажата кнопка mainButton');
 				// Дополнительные действия, которые вы хотите выполнить при нажатии на кнопку
-			};
+			}; */
 			return { tg, showDataUser, userData, user };
 		},
 	};
