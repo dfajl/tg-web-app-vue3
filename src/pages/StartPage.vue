@@ -3,7 +3,7 @@
 		<div class="logoWrapper">
 			<img src="../assets/images/neovox_logo.svg" alt="neovox_logo" />
 		</div>
-		<span>{{ window.Telegram.WebApp }}</span>
+		<span>{{ tg }}</span>
 		<my-main-button class="startPageBtn" @click="showDataUser"
 			>Магазин</my-main-button
 		>
@@ -24,7 +24,7 @@
 			//onMounted(() => {
 			const { tg, user } = useTelegram();
 			function showDataUser() {
-				userData.value = 'gfgfg';
+				userData.value = 'string';
 			}
 
 			//});
