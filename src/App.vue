@@ -10,9 +10,9 @@
 		name: 'App',
 		components: {},
 		setup() {
-			onMounted(() => {
-				useTelegram();
-			});
+			const { tg } = useTelegram();
+
+			watchEffect(tg.ready());
 		},
 	};
 </script>
