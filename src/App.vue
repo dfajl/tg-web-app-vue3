@@ -10,10 +10,10 @@
 		name: 'App',
 		components: {},
 		setup() {
-			const { tg } = useTelegram();
+			//const { tg } = useTelegram();
 
 			watchEffect(() => {
-				tg.ready();
+				window.Telegram.WebApp.ready();
 				window.Telegram.WebApp.MainButton.show();
 			});
 		},
