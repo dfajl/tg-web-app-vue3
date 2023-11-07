@@ -3,6 +3,7 @@ import App from './App.vue';
 import Components from '@/components/exportComponents.js'; //глобальная регистрация компонентов
 import router from './router/router';
 import { store } from './store/store';
+import VueTelegram from 'vue-tg';
 
 const app = createApp(App);
 
@@ -22,4 +23,4 @@ Components.forEach((component) => {
 	app.component(component.name, component);
 });
 
-app.use(vuetify).use(store).use(router).mount('#app');
+app.use(vuetify).use(store).use(router).use(VueTelegram).mount('#app');

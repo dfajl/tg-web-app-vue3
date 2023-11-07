@@ -23,6 +23,7 @@
     "vue": "^3.3.6",
     "vue-router": "^4.2.5",
     "vue-telegram-login": "^2.1.0",
+    "vue-tg": "^0.1.1",
     "vuetify": "^3.3.22",
     "vuex": "^4.1.0"
   },
