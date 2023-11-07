@@ -39,7 +39,7 @@
 			display: flex;
 			align-self: center;
 			margin-bottom: 80px;
-			width: 80%;
+			width: 65%;
 			img {
 				width: 100%;
 			}
