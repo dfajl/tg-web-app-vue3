@@ -28,6 +28,19 @@
 			}
 
 			//});
+			onMounted(() => {
+				window.Telegram.WebApp.MainButton.show();
+				window.Telegram.WebApp.onEvent(
+					'mainButtonClicked',
+					handleMainButtonClick,
+				);
+			});
+
+			const handleMainButtonClick = () => {
+				// Обработка события нажатия на кнопку "mainButton"
+				console.log('Нажата кнопка mainButton');
+				// Дополнительные действия, которые вы хотите выполнить при нажатии на кнопку
+			};
 			return { tg, showDataUser, userData, user };
 		},
 	};
