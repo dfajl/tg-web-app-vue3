@@ -5,7 +5,7 @@
 <script>
 	import useTelegram from '@/hooks/useTelegram';
 	import styles from './assets/styles/style.module.css';
-	import { ref, onMounted, onBeforeUnmount } from 'vue';
+	import { ref, onMounted, onBeforeUnmount, watchEffect } from 'vue';
 	export default {
 		name: 'App',
 		components: {},
