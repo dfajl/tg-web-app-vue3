@@ -15,10 +15,6 @@
 			watchEffect(() => {
 				tg.ready();
 				window.Telegram.WebApp.MainButton.show();
-				window.Telegram.WebApp.onEvent(
-					'mainButtonClicked',
-					handleMainButtonClick,
-				);
 			});
 		},
 	};
