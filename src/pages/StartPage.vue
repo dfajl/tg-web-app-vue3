@@ -14,7 +14,7 @@
 
 <script>
 	import useTelegram from '@/hooks/useTelegram';
-	import { ref, onMounted, onBeforeUnmount } from 'vue';
+	import { ref, onMounted, onBeforeUnmount, watchEffect } from 'vue';
 	import { useStore } from 'vuex';
 	import { useRoute } from 'vue-router';
 	//import { mapActions, mapState, mapMutations } from 'vuex';
