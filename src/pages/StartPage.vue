@@ -3,7 +3,7 @@
 		<div class="logoWrapper">
 			<img src="../assets/images/neovox_logo.svg" alt="neovox_logo" />
 		</div>
-		<span>{{ tg }}</span>
+		<span>{{ window.Telegram.WebApp }}</span>
 		<my-main-button class="startPageBtn" @click="showDataUser"
 			>Магазин</my-main-button
 		>
