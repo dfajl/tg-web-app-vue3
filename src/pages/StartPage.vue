@@ -3,6 +3,7 @@
 		<div class="logoWrapper">
 			<img src="../assets/images/neovox_logo.svg" alt="neovox_logo" />
 		</div>
+		<span>tg</span>
 		<my-main-button class="startPageBtn">Магазин</my-main-button>
 		<my-main-button class="startPageBtn">Задания</my-main-button>
 	</div>
@@ -17,10 +18,11 @@
 	export default {
 		setup() {
 			//onMounted(() => {
-			useTelegram();
+			const tg = useTelegram();
 			//});
 		},
 	};
+	return { tg };
 </script>
 
 <style lang="scss" scoped>
