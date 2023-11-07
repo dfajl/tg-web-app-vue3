@@ -16,9 +16,9 @@
 	//import { mapActions, mapState, mapMutations } from 'vuex';
 	export default {
 		setup() {
-			onMounted(() => {
-				useTelegram();
-			});
+			//onMounted(() => {
+			useTelegram();
+			//});
 		},
 	};
 </script>
