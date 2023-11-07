@@ -5,4 +5,5 @@ export default function useTelegram() {
 	tg.expand();
 	console.log(tg);
 	console.log(tg.themeParams.bg_color);
+	tg.setBackgroundColor(tg.bg_color);
 }
