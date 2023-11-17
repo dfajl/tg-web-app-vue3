@@ -11,11 +11,10 @@
 		components: {},
 		setup() {
 			//const { tg } = useTelegram();
-
-			watchEffect(() => {
+			/* watchEffect(() => {
 				window.Telegram.WebApp.ready();
 				window.Telegram.WebApp.MainButton.show();
-			});
+			}); */
 		},
 	};
 </script>

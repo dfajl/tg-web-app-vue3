@@ -3,9 +3,12 @@
 		<div class="logoWrapper">
 			<img src="../assets/images/neovox_logo.svg" alt="neovox_logo" />
 		</div>
-		<span> {{ telegram }}</span>
 		<my-main-button class="startPageBtn">Магазин</my-main-button>
-		<my-main-button class="startPageBtn">Задания</my-main-button>
+		<my-main-button
+			class="startPageBtn"
+			@click="$router.push('/questsList')"
+			>Задания</my-main-button
+		>
 	</div>
 </template>
 
@@ -27,10 +30,6 @@
 </script>
 
 <style lang="scss" scoped>
-	body {
-		background: var(--tg-theme-bg-color);
-		color: var(--tg-theme-text-color);
-	}
 	.startPageWrapper {
 		display: flex;
 		flex-direction: column;

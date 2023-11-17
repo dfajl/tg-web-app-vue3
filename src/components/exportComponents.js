@@ -3,5 +3,6 @@
     и не писать везде import 
 */
 import MyMainButton from '@/components/MyMainButton';
+import MyQuestItem from '@/components/MyQuestItem';
 
-export default [MyMainButton];
+export default [MyMainButton, MyQuestItem];
