@@ -2,7 +2,8 @@
     это файл, содержащий в себе ве компоненты. Данный подход позволяет регистрировать компоненты глобально
     и не писать везде import 
 */
-import MyMainButton from '@/components/MyMainButton';
-import MyQuestItem from '@/components/MyQuestItem';
+import MyButton from '@/components/MyButton';
+import QuestsList from '@/components/QuestsList';
+import ProgressBar from '@/components/ProgressBar';
 
-export default [MyMainButton, MyQuestItem];
+export default [MyButton, QuestsList, ProgressBar];

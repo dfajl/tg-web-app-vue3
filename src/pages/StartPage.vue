@@ -3,11 +3,9 @@
 		<div class="logoWrapper">
 			<img src="../assets/images/neovox_logo.svg" alt="neovox_logo" />
 		</div>
-		<my-main-button class="startPageBtn">Магазин</my-main-button>
-		<my-main-button
-			class="startPageBtn"
-			@click="$router.push('/questsList')"
-			>Задания</my-main-button
+		<MyButton class="startPageBtn">Магазин</MyButton>
+		<MyButton class="startPageBtn" @click="$router.push('/questsPage')"
+			>Задания</MyButton
 		>
 	</div>
 </template>
@@ -51,6 +49,8 @@
 			width: 70%;
 			font-size: 17px;
 			height: 50px;
+			background: #d0cdcd58;
+			color: rgba(190, 4, 4, 0.68);
 		}
 	}
 </style>

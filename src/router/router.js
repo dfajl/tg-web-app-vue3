@@ -1,17 +1,24 @@
 import StartPage from '@/pages/StartPage';
-import QuestsList from '@/pages/QuestsList';
+import QuestsPage from '@/pages/QuestsPage';
+import QuestInfo from '@/pages/QuestInfo';
 
 import { createRouter, createWebHistory } from 'vue-router';
 const routes = [
 	{
 		path: '/',
 		component: StartPage,
-		name: 'startPage',
+		name: 'StartPage',
 	},
 	{
-		path: '/questsList',
-		component: QuestsList,
-		name: 'questsList',
+		path: '/questsPage',
+		component: QuestsPage,
+		name: 'QuestsPage',
+	},
+	{
+		path: '/questInfo/:id',
+		component: QuestInfo,
+		name: 'QuestsInfo',
+		props: true,
 	},
 ];
 
